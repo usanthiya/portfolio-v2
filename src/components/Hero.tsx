@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Linkedin, Github, ArrowDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const roles = ['frontend development', 'backend development', 'web development'];
+const roles = ['Frontend development', 'Backend development', 'Web development'];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -50,7 +50,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 px-6"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-10 px-6"
     >
       {/* Background Orbs */}
       <div className="glow-orb w-[300px] h-[300px] bg-primary-400 dark:bg-primary-900 left-[10%] top-[20%] animate-pulse-slow" />
@@ -84,7 +84,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl font-medium text-slate-600 dark:text-slate-400 min-h-[32px] flex items-center gap-1.5"
           >
-            <span>i am into</span>
+            <span>I am into</span>
             <span className="text-primary-600 dark:text-primary-400 font-semibold border-r-2 border-primary-500 animate-pulse pr-1">
               {displayText}
             </span>

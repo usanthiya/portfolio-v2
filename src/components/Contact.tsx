@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Headset, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import axios from 'axios';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,27 +40,20 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch('/.netlify/functions/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          message: formData.message,
-        }),
+      const response = await axios.post('/.netlify/functions/send-email', {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
       });
-
-      const data = await response.json();
-
-      if (response.ok) {
+      
+      if (response.status === 200) {
         setStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
-        throw new Error(data.error || 'Failed to send message.');
+        throw new Error(response.data.error || 'Failed to send message.');
       }
+      
     } catch (error: any) {
       console.error('SendGrid Error:', error);
       setStatus('error');

@@ -28,37 +28,42 @@ export default function Contact() {
 
     setStatus('loading');
 
+    const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (isLocalDev) {
+      // Simulate email sending in local development mode
+      console.log('Local Dev Mode: Simulating SendGrid send...', formData);
+      await new Promise((resolve) => setTimeout(resolve, 1200));
+      setStatus('success');
+      setFormData({ name: '', email: '', phone: '', message: '' });
+      return;
+    }
+
     try {
-      // Direct integration with EmailJS REST API
-      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      const response = await fetch('/.netlify/functions/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          service_id: 'contact_service',
-          template_id: 'template_contact',
-          user_id: 'user_TTDmetQLYgWCLzHTDgqxm',
-          template_params: {
-            from_name: formData.name,
-            from_email: formData.email,
-            phone_number: formData.phone,
-            message: formData.message,
-          },
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
         }),
       });
+
+      const data = await response.json();
 
       if (response.ok) {
         setStatus('success');
         setFormData({ name: '', email: '', phone: '', message: '' });
       } else {
-        const errText = await response.text();
-        throw new Error(errText || 'Failed to send message.');
+        throw new Error(data.error || 'Failed to send message.');
       }
     } catch (error: any) {
-      console.error('EmailJS Error:', error);
+      console.error('SendGrid Error:', error);
       setStatus('error');
-      setErrorMessage('Oops! Something went wrong while sending your message. Please try again later.');
+      setErrorMessage(error.message || 'Oops! Something went wrong while sending your message. Please try again later.');
     }
   };
 

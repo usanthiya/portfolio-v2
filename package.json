@@ -12,7 +12,10 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "framer-motion": "^11.11.17",
-    "lucide-react": "^0.454.0"
+    "lucide-react": "^0.454.0",
+    "@sendgrid/mail": "^8.1.3",
+    "@netlify/functions": "^2.8.2",
+    "axios": "^1.7.7"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",

@@ -57,7 +57,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'glass-nav py-4 shadow-sm' : 'bg-transparent py-6'
+        scrolled ? 'glass-nav bg-white/30 dark:bg-slate-800/30 backdrop-blur-md py-4 shadow-sm' : 'bg-white/10 dark:bg-slate-900/10 backdrop-blur-md py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -87,7 +87,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
                     e.preventDefault();
                     handleNavClick(item.id);
                   }}
-                  className={`relative text-sm font-medium tracking-wide transition-colors duration-200 py-2 ${
+                  className={`relative text-md font-medium tracking-wide transition-colors duration-200 py-2 ${
                     activeSection === item.id
                       ? 'text-primary-600 dark:text-primary-400 font-semibold'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white'

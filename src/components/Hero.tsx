@@ -2,7 +2,12 @@ import { useState, useEffect } from 'react';
 import { Linkedin, Github, ArrowDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const roles = ['Frontend development', 'Backend development', 'Web development'];
+const roles = [
+  'Full Stack Development',
+  'MERN Stack Applications',
+  'AI-Integrated Solutions',
+  'Modern Web Experiences',
+];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);

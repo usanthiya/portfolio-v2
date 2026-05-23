@@ -5,7 +5,7 @@ export default function About() {
   const details = [
     { icon: <Mail size={18} className="text-primary-500" />, label: 'Email', value: 'santhiyaudhya1@gmail.com', href: 'mailto:santhiyaudhya1@gmail.com' },
     { icon: <MapPin size={18} className="text-primary-500" />, label: 'Location', value: 'Chidambaram, India - 608001' },
-    { icon: <Calendar size={18} className="text-primary-500" />, label: 'Role', value: 'Full Stack Web Developer' },
+    { icon: <Calendar size={18} className="text-primary-500" />, label: 'Role', value: 'Full Stack Developer' },
   ];
 
   return (
@@ -70,7 +70,7 @@ export default function About() {
             </span>
 
             <p className="text-slate-600 dark:text-slate-355 text-base leading-relaxed">
-              Passionate Full Stack Developer with a strong foundation in building scalable web applications from conception to deployment. Proficient in languages like JavaScript, Python with hands-on experience in frameworks like ReactJS, NodeJS, ExpressJS. Skilled in database management using MongoDB, API Integration, and creating responsive, user-friendly interfaces. Committed to staying updated with the latest technologies and delivering high-quality solutions to meet business objectives.
+              Full Stack MERN Developer with 2+ years of experience building scalable and user-centric web applications. Experienced in developing end-to-end solutions, modern responsive interfaces, backend APIs, and AI-powered features including vector database and AI model integrations. Passionate about building performant, maintainable applications and continuously exploring modern technologies and best practices.
             </p>
 
             {/* Quick Details Box Grid */}

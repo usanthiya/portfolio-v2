@@ -8,10 +8,11 @@ const experienceData = [
     period: 'Mar 2024 - Present',
     type: 'Full-time',
     bullets: [
-      'Developed and maintained Datumart Shop, an e-commerce platform for seamless food ordering operations.',
-      'Built and optimized user experience features including secure checkouts, live order tracking, payment processing, and robust user authentication.',
-      'Engineered and polished Datumart Admin, a merchant management dashboard designed for tracking real-time orders, catalog updates, and store status controls.',
-      'Collaborated closely with backend developers and product teams to integrate RESTful API endpoints and resolve styling bottlenecks.'
+      'Contributed to the development of scalable web applications for the Datumart Platform, an e-commerce ecosystem providing digital ordering and business management solutions for restaurant-based businesses using ReactJS, TypeScript, NodeJS, ExpressJS, and MongoDB.',
+      'Developed features for product/catalog management, order management, rewards systems, SEO tools, social marketing, table reservations, QR dining, and merchant admin workflows.',
+      'Built responsive and modern web interfaces, integrating REST APIs, authentication systems, payment gateways, and email services to support scalable business operations.',
+      'Contributed to NLP chatbot integration and mobile food ordering applications for restaurant-based clients within the platform ecosystem..',
+      'Developed AI-powered hiring platform features for Stynt.ai involving semantic search workflows using vector embeddings and LLM integrations for intelligent candidate matching.'
     ],
   },
 ];

@@ -68,9 +68,9 @@ export default function Education() {
                 <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-4">
                   {item.institution}
                 </p>
-                <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                {/* <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                   {item.desc}
-                </p>
+                </p> */}
               </div>
             </motion.div>
           ))}

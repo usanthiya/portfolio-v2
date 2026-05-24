@@ -30,7 +30,7 @@ export default function Footer() {
             Santhiya's Portfolio
           </h3>
           <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-            Thank you for visiting my personal portfolio website. Connect with me over socials to stay updated. Keep Rising 🚀. Connect with me over live chat!
+            Thanks for visiting my digital space! Follow me on socials to stay updated with my latest builds, innovations, and learning journey in tech. Keep rising 🚀
           </p>
         </div>
 

@@ -31,20 +31,6 @@ export default function App() {
     }
   }, [darkMode]);
 
-  // Tab visibility change details
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        document.title = 'Portfolio | Santhiya';
-      } else {
-        document.title = 'Come Back To Portfolio';
-      }
-    };
-
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-    return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
-  }, []);
-
 //   // Initialize Tawk.to live chat
 //   useEffect(() => {
 //     const s1 = document.createElement('script');

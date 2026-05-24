@@ -13,7 +13,7 @@ export default function About() {
     {
       icon: <MapPin size={18} className="text-primary-500" />,
       label: "Location",
-      value: "Chidambaram, India - 608001",
+      value: "Chidambaram, India",
     },
     {
       icon: <Calendar size={18} className="text-primary-500" />,

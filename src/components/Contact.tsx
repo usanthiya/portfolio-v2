@@ -64,7 +64,7 @@ export default function Contact() {
   const contactInfo = [
     { icon: <Phone size={18} />, label: 'Phone', value: '+91 6379477549', href: 'tel:+916379477549' },
     { icon: <Mail size={18} />, label: 'Email', value: 'santhiyaudhya1@gmail.com', href: 'mailto:santhiyaudhya1@gmail.com' },
-    { icon: <MapPin size={18} />, label: 'Location', value: 'Chidambaram, India - 608001' },
+    { icon: <MapPin size={18} />, label: 'Location', value: 'Chidambaram, India' },
   ];
 
   return (

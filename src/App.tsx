@@ -45,23 +45,23 @@ export default function App() {
     return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
   }, []);
 
-  // Initialize Tawk.to live chat
-  useEffect(() => {
-    const s1 = document.createElement('script');
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    const s0 = document.getElementsByTagName('script')[0];
-    if (s0 && s0.parentNode) {
-      s0.parentNode.insertBefore(s1, s0);
-    }
-
-    return () => {
-      // Clean up script on unmount
-      s1.remove();
-    };
-  }, []);
+//   // Initialize Tawk.to live chat
+//   useEffect(() => {
+//     const s1 = document.createElement('script');
+//     s1.async = true;
+//     s1.src = 'https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+//     s1.charset = 'UTF-8';
+//     s1.setAttribute('crossorigin', '*');
+//     const s0 = document.getElementsByTagName('script')[0];
+//     if (s0 && s0.parentNode) {
+//       s0.parentNode.insertBefore(s1, s0);
+//     }
+//
+//     return () => {
+//       // Clean up script on unmount
+//       s1.remove();
+//     };
+//   }, []);
 
   // Show scroll to top button
   useEffect(() => {

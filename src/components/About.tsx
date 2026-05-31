@@ -85,13 +85,7 @@ export default function About() {
             {/* <h3 className="text-3xl font-bold text-slate-800 dark:text-white">I’m Santhiya</h3> */}
             {/* <span className="inline-block px-4 py-1 rounded-lg text-sm font-bold bg-primary-100 dark:bg-primary-950/60 text-primary-700 dark:text-primary-400">Full Stack Developer</span> */}
             <p className="text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-              Full Stack MERN Developer with 2+ years of experience building
-              scalable and user‑centric web applications. Experienced in
-              developing end‑to‑end solutions, modern responsive interfaces,
-              backend APIs, and AI‑powered features including vector databases
-              and AI model integrations. Passionate about building performant,
-              maintainable applications and continuously exploring modern
-              technologies and best practices.
+              Results-oriented Full Stack Developer with expertise in designing and developing scalable web applications using React.js, Node.js, Express.js, MongoDB, and TypeScript. Experienced in building end-to-end solutions, RESTful APIs, database architectures, authentication systems, and responsive user interfaces. Skilled in developing AI-powered applications leveraging Vector Search, Retrieval-Augmented Generation (RAG), LLM integrations, embedding pipelines, and intelligent search systems. Passionate about combining modern software engineering practices with Artificial Intelligence to create innovative, scalable, and impactful products.
             </p>
             {/* Details Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

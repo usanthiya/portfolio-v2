@@ -1,5 +1,15 @@
 export const projectsData = [
   {
+    name: 'Quick Blog: A Minimalistic Blogging Platform',
+    category: 'Web App',
+    desc: ' Full-stack blogging platform featuring a public-facing blog reader with comment support and a protected admin dashboard for content management. Implemented JWT-based authentication, AI-assisted blog generation, and image uploads via ImageKit CDN. ',
+    tags: [' React','TypeScript', 'Tailwind CSS', 'Redux Toolkit', 'Node.js', 'Express', 'ImageKit', 'Google Gemini API' ],
+    links: {
+      code: 'https://github.com/usanthiya/QuickBlog',
+    },
+    color: 'from-violet-500/20 to-purple-500/20',
+  },
+  {
     name: 'Income Expense Tracker',
     category: 'React App',
     desc: 'Implemented a user-friendly financial management tool that allows individuals to monitor and analyze their income and expenses efficiently with detailed balance tracking.',
@@ -31,5 +41,5 @@ export const projectsData = [
       code: 'https://github.com/usanthiya/email_validator',
     },
     color: 'from-violet-500/20 to-purple-500/20',
-  },
+  }
 ];
